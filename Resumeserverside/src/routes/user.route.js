@@ -13,10 +13,10 @@ router.route("/applicant-user").post(
 router.route("/applicant-resume-score").get(applicantResumeScore)
 
 
-router.route("/recruter-user").post(
+router.route("/recruiter-user").post(
     upload.array("resume"), recruterResumeUpload 
 )
-router.route("/recruter-resume-score").get(recruterResumeScore)
+router.route("/recruiter-resume-score").get(recruterResumeScore)
 
 
 module.exports = router
