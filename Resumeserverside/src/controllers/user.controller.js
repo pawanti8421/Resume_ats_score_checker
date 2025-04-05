@@ -256,7 +256,7 @@ const recruterResumeScore = asyncHandler( async (req, res) => {
     
     await resetFolder("./public/temp");
     await resetFolder("./public/uploads");
-    console.log(predictions);
+    
     
 
     return res.status(200).json(new apiResponse(200, { predictions }, "ATS Score Generated"));
